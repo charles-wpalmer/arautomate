@@ -1,0 +1,27 @@
+service: bref-php-1
+
+provider:
+    iam: arn:aws:iam::060299712988:user/charlespalmer
+    name: aws
+    region: eu-west-1
+    runtime: provided.al2
+
+plugins:
+    - ./vendor/bref/bref
+
+functions:
+    api:
+        handler: index.php
+        description: ''
+        timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
+        layers:
+            - ${bref:layer.php-82} # PHP runtime
+        events:
+            # -   httpApi: '*'
+            -   invoke: invoke
+
+# Exclude files from deployment
+package:
+    patterns:
+        - '!node_modules/**'
+        - '!tests/**'

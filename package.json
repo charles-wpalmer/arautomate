@@ -1,0 +1,15 @@
+{
+  "name": "@cwpalmer/arautomate",
+  "version": "1.0.0",
+  "description": "EWmail automation for AR.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless": "^3.26.0"
+  },
+  "devDependencies": {}
+}

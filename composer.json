@@ -1,0 +1,17 @@
+{
+    "name": "charlespalmer/1",
+    "autoload": {
+        "psr-4": {
+            "Charlespalmer\\1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "charlespalmer",
+            "email": "charles.palmer@crowdproperty.com"
+        }
+    ],
+    "require": {
+        "bref/bref": "^1.7"
+    }
+}
